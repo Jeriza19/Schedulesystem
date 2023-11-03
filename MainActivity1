@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class MainActivity1{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+
+        Schedulesystem schedulesystem = new Schedulesystem();
+
+        System.out.println("Student Name: ");
+        String studentName = scanner.nextLine(); 
+        schedulesystem.setStudentName(studentName);
+
+        System.out.println("Student ID: ");
+        int studentId = scanner.nextInt();
+        schedulesystem.setStudentId(studentId); 
+
+        scanner.nextLine();
+        
+        System.out.println("Email: ");
+        String email = scanner.nextLine();
+        schedulesystem.setEmail(email); 
+
+        System.out.println("Phone: ");
+        int phone = scanner.nextInt();
+        schedulesystem.setPhone(phone);
+
+        scanner.nextLine();
+        
+        System.out.println("Courses: ");
+        String courses = scanner.nextLine();
+        schedulesystem.setCourses(courses);
+
+        //Print student information
+        System.out.println("Student Name: " + schedulesystem.getStudentName());
+        System.out.println("Student ID: " + schedulesystem.getStudentId());
+        System.out.println("Email: " + schedulesystem.getEmail());
+        System.out.println("Phone: " + schedulesystem.getPhone());
+        System.out.println("Courses: " + schedulesystem.getCourses());
+        
+
+    }
+}
+    
+    
